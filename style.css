@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eef8ff;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #fff;
+  padding: 70px 0 20px;
+  border-top-left-radius: 125px;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.foot-row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 15%;
+  padding: 10px;
+}
+
+.col h2 {
+  width: fit-content;
+  margin-bottom: 30px;
+  position: relative;
+  font-weight: bolder;
+}
+
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid rgb(99, 74, 240);
+}
+
+.col ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.col ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: -34px;
+}
+
+.footer_form {
+  padding-bottom: 15px;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer_form .far {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.footer_form .footer_input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+
+.footer_form .footer_button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer_form .footer_button .fas {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.social-icons .fab {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.underline {
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  overflow: hidden;
+}
+
+.underline span {
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  footer {
+    bottom: unset;
+    padding-left: 50px;
+  }
+  .col {
+    flex-basis: 35%;
+  }
+  .footer_form {
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  .footer_form input {
+    font-size: 11px;
+  }
+}
