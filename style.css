@@ -5,6 +5,23 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 600px) {
+  .w3-bar-item.w3-mobile,
+  .w3-dropdown-hover.w3-mobile,
+  .w3-dropdown-click.w3-mobile {
+    text-align: left !important;
+  }
+}
+@media (max-width: 600px) {
+  .w3-dropdown-hover.w3-mobile,
+  .w3-dropdown-hover.w3-mobile .w3-btn,
+  .w3-dropdown-hover.w3-mobile .w3-button,
+  .w3-dropdown-click.w3-mobile,
+  .w3-dropdown-click.w3-mobile .w3-btn,
+  .w3-dropdown-click.w3-mobile .w3-button {
+    width: auto !important;
+  }
+}
 body {
   background: #eef8ff;
 }
